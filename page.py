@@ -103,7 +103,10 @@ def showstock():
         y2=dt2[0][0]
         r=y2-y1,m2-m1
         b=w-(r[0]*12+r[1])
+        S=d[0][6]
         st.write(f"warranty period:{w} months({b} months remaining)")
+        st.write(f"specification:{S}")
+        st.write(f"condition:{d[0][5]}")
         if st.button("back"):
                 st.session_state.page = "op"
     elif st.button("back"):
