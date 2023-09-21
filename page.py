@@ -1,7 +1,7 @@
 import streamlit as st
 import mysql.connector
 
-db=mysql.connector.connect(host="localhost",user="root",password="ujjwal",database="stock")
+db=mysql.connector.connect(host="bakgs4ewc5wjhjigbt9w-mysql.services.clever-cloud.com",user="u6yovg764kskss2z",password="iWSZjK9HdgGfMmdZEUJp",database="bakgs4ewc5wjhjigbt9w")
 c=db.cursor()
 def show_data(i=0,n=0):
     l=True
