@@ -126,8 +126,6 @@ def removestock():
             st.session_state.page = "op"
     elif st.button("back"):
             st.session_state.page = "op"
-def close():
-           
     
     
     
