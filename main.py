@@ -14,3 +14,4 @@ elif page == "show stock":
         showstock()
 elif page == "remove stock":
         removestock()
+,
