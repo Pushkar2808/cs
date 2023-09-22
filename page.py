@@ -127,7 +127,7 @@ def removestock():
     elif st.button("back"):
             st.session_state.page = "op"
 def close():
-    db.close()       
+           
     
     
     
