@@ -36,7 +36,7 @@ def login():
                     
                     
 def op():
-    u = st.selectbox("Select",("select","add stock", "show stock","remove stock"))
+    u = st.selectbox("STOCK",("select","add stock", "show stock","remove stock"))
     if u=="add stock":
         st.session_state.page = "add stock"
     elif u=="show stock":
@@ -47,6 +47,13 @@ def op():
             print("")
     elif st.button("back"):
         st.session_state.page = "login"
+    u = st.selectbox("ISSUE",("select","issue stock","add department", "show issue"))
+    if u=="issue stock":
+        st.session_state.page = "issue stock"
+    elif u=="add department":
+        st.session_state.page = "add department"
+    elif u=="show issue":
+        st.session_state.page = "show issue"
 def addstock():
     st.title("add stock")
     n = st.text_input("name")
